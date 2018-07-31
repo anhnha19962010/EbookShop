@@ -1,0 +1,45 @@
+- display col right product relative ok
+-display product view new ok
+
+ <div class="form-group">
+                         <label class="control-label col-sm-2 requiredField" for="date">
+                            Ngày B?t Ð?u
+                        <span class="asteriskField">*</span>
+                        </label>
+                        <div class='input-group date' id='datetimepicker6'>
+                            <input type='text' class="form-control" name="datestart" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2 requiredField" for="date">
+                            Ngày K?t thúc
+                            <span class="asteriskField">*</span>
+                        </label>
+                        <div class='input-group date' id='datetimepicker7'>
+                            <input type='text' class="form-control" name="dateend" />
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+    $(function () {
+        $('#datetimepicker6').datetimepicker();
+        $('#datetimepicker7').datetimepicker({
+            useCurrent: false //Important! See issue #1075
+        });
+        $("#datetimepicker6").on("dp.change", function (e) {
+            $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
+        });
+        $("#datetimepicker7").on("dp.change", function (e) {
+            $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
+        });
+    });
+</script>
+total paymen hoa don
+
+php bakeryy/cron.php /Test/index
+0 21 * * * php bakeryy/cron.php /Test/index

@@ -1,0 +1,723 @@
+@charset "utf-8";
+
+@import url("base.css");
+
+/***************************************************************************
+ *
+ * COMMON STYLE
+ *
+ ***************************************************************************/
+
+body {
+    background-color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000000;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+ul {
+    list-style: none;
+}
+a{
+    text-decoration: none!important;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.no-padding{
+    padding-top: 30px !important;
+}
+.inner {
+    width: 1175px;
+    margin: 0 auto;
+}
+.hoverUnder:hover{
+    text-decoration: underline;
+}
+
+.header-top{
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+}
+.header-top ul{
+    padding: 10px;
+    width: 100%;
+}
+
+.header-top ul li{
+    display: inline-block;
+    padding-right: 10px;
+}
+.header-top ul li a{
+    color: #666;
+}
+.header-top ul li a .fa{
+    padding-right: 5px;
+}
+
+.header-info{
+    z-index: 2;
+    width: 100%;
+    padding: 30px 0;
+    position: relative;
+}
+
+.header-info .h-logo{
+    float: left;
+    position: relative;
+}
+.header-info .h-cart{
+    float: right;
+}
+.header-info .h-cart .linkcart{
+    padding-top: 15px;
+    position: relative;
+    display: block;
+    color: #666;
+}
+.header-info .h-cart .linkcart i{
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 20px;
+}
+.header-info .h-cart .linkcart .qty{
+    position: absolute;
+    display: block;
+    text-align: center;
+    top: 0;
+    left: 8px;
+    z-index: 3;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #c00;
+    color: #fff;
+}
+.header-info .h-logo a{
+    display: block;
+
+}
+
+.header-info .h-search{
+    width: 70%;
+    position: absolute;
+    padding: 0 0 0 400px;
+}
+.header-info .h-search fieldset{
+    border: none;
+    position: relative;
+}
+.header-info .h-search input{
+
+}
+.header-info .h-search button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border:none;
+    padding: 8px;
+    background-color: transparent;
+}
+.header-info .h-search button .fa{
+    color: #d0d0d0;
+}
+
+.header-nav{
+    background: #77b748;
+    width: 100%;
+    position: relative;
+    font: 500 14px/58px 'Work Sans', Arial, Helvetica, sans-serif;
+}
+.header-nav ul{
+    width: 100%;
+}
+.header-nav ul li{
+    list-style-type: none;
+    float: left;
+}
+.header-nav ul li a{
+    display: block;
+    padding:0 25px;
+    color: #fff;
+}
+.header-nav ul li a .fa{
+    padding-right: 5px;
+}
+.header-nav ul li a:hover{
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/*------------------------ END HEADER--------------*/
+
+#bxslider{
+    padding-bottom: 60px;
+    overflow: hidden;
+}
+
+#pageTitle{
+    font-size: 30px;
+    font-weight: bold;
+    color: #77b748;
+    text-align: center;
+    padding:10px 0 30px 0;
+}
+
+#content{
+    width: 100%;
+    position: relative;
+}
+.titleSidebar{
+    color: #fff;
+    width: 100%;
+    padding: 0 20px;
+    border-radius: 5px;
+    background: #484848;
+    border-bottom: 1px solid #dbdbdb;
+}
+.titleFilter{
+    display: block;
+    color: #fff;
+    width: 100%;
+    padding: 0 20px;
+    border-radius: 5px;
+    background: #444;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+#content .sidebar .titleSidebar h3{
+    margin: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 40px;
+}
+#content .sidebar .listCategory ul{
+    width: 100%;
+    font-size: 13px;
+    line-height: 17px;
+    list-style: none;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+}
+#content .sidebar .listCategory ul li{
+    width: 100%;
+    padding: 11px 10px;
+    position: relative;
+    line-height: inherit;
+    list-style-type: none;
+    border-bottom: 1px solid #e6e6e6;
+}
+#content .sidebar .listCategory ul li a{
+    color: #666;
+    display: block;
+}
+#content .sidebar .listCategory ul li a em{
+    float: right;
+}
+
+#content .sidebar .func-filter input[type='checkbox']{
+    margin-right: 10px;
+}
+#content .sidebar .func-filter .filter-price-content{
+    padding-top: 20px;
+}
+#content .sidebar .func-filter .filter-price-content .fa{
+    padding: 0 20px;
+}
+#content .sidebar .func-filter .filter-price-content span input{
+    width: 80px;
+    padding: 10px 5px;
+}
+
+.sidebar .listBestViewBook{
+    margin-top: 30px;
+}
+.sidebar .listBestViewBook ul{
+    font-size: 13px;
+    line-height: 17px;
+    list-style: none;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+    padding: 15px 0;
+}
+.sidebar .listBestViewBook ul li{
+    padding: 5px 0;
+}
+.sidebar .listBestViewBook ul li a{
+    display: block;
+}
+.sidebar .listBestViewBook ul li img{
+    float: left;
+    width: 70px;
+    margin: 0 8px 0 0;
+}
+.sidebar .listBestViewBook ul li .info-Book{
+    float: left;
+    width: 60%;
+}
+.sidebar .listBestViewBook ul li .info-Book h3{
+    padding: 0 0 20px;
+    margin: 0;
+    color: #484848;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19px;  
+    font-style: normal;
+    text-transform: capitalize;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+}
+
+/*---------------------END SIDEBAR -----------------------*/
+
+#content .mainContent .bookbestselling .title{
+    margin: 0 0 30px;
+    padding: 0 0 30px;
+    border-bottom: 1px solid #dbdbdb;
+    font-size: 25px;
+    color: #333;
+}
+.content-book-selling{
+    width: 100%;
+    padding: 30px;
+    margin: 0 0 30px;
+    position: relative;
+    background: #f7f7f7;
+}
+.content-book-selling img{
+    width: 100%;
+    display: block;
+    max-width: none;
+}
+
+.content-book-selling .booktitle{
+    padding: 30px 0 10px 0;
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: bold;
+}
+.content-book-selling .booktitle:hover{
+    color: #77b748;
+
+}
+.content-book-selling .booktitle h3{
+    
+}
+
+.content-book-selling .info-book{
+    padding: 0 30px;
+}
+
+.content-book-selling .info-book .bookauthor{
+    font-size: 18px;
+    line-height: 18px;
+    padding: 0 0 10px;
+
+}
+.content-book-selling .info-book .bookauthor a{
+    color: #666;    
+} 
+.content-book-selling .info-book .bookprice{
+    margin-top: 30px;
+}
+.content-book-selling .info-book .bookprice ins{
+    color: #484848;
+    font: bold 40px/40px 'Work Sans', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.content-book-selling .description{
+    padding: 30px 20px;
+}
+.content-book-selling .description h3{
+    padding: 15px 0px;
+    font-size: 20px;
+    color: #666;
+}
+.bookbtn-payment{
+    display: inline-block;
+    margin: 10px 0 0 0;
+    padding: 5px 25px;
+    border-radius: 20px;
+    font: 400 13px/38px 'Work Sans', Arial, Helvetica, sans-serif;
+    background-color: #77b748;
+    color: #fff;
+}
+
+.bookbtn-payment:hover, .bookbtn-payment.tg-active{
+    box-shadow: inset 0 -2px 0 0 #649b3c;
+}
+
+.mainContent .booklist{
+    padding: 20px 0;
+}
+.mainContent .booklist .title{
+    margin: 0 0 30px;
+    padding: 0 0 30px;
+    border-bottom: 1px solid #dbdbdb;
+    font-size: 25px;
+    color: #333;
+}
+.mainContent .booklist .boxBook{
+    margin-bottom: 30px;
+}
+.mainContent .booklist .boxBook img{
+    padding-bottom: 10px;
+}
+.mainContent .booklist .boxBook .categorybook{
+    width: 100%;
+    margin: 0 0 20px;
+    color: #666;
+    font-size: 13px;
+    line-height: 13px;
+    list-style: none;
+    padding: 0 0 8px;
+    border-bottom: 1px solid #dbdbdb;
+}
+.mainContent .booklist .boxBook .categorybook:hover{
+    color: #55acee;
+}
+.mainContent .booklist .boxBook .nameBook{
+    padding: 0 0 20px;
+    margin: 0;
+    color: #484848;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;  
+    font-style: normal;
+    text-transform: capitalize;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+}
+.mainContent .booklist .boxBook .nameBook:hover{
+    color: #77b748;
+}
+.mainContent .booklist .boxBook .authorBook{
+    font-size: 13px;
+    line-height: 13px;
+    padding: 0 0 6px;
+    color: #666;
+}
+.mainContent .booklist .boxBook .authorBook span:hover{
+    color: #55acee;
+}
+.mainContent .booklist .boxBook .priceBook ins{
+    font: 500 18px/18px 'Work Sans', Arial, Helvetica, sans-serif;
+    color: #77b748;
+    text-decoration: none;
+}
+
+.booklist .bookbtn-payment{
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+}
+
+
+/*-----------------------------END CONTENT---------------*/
+
+#footer{
+    background: #f7f7f7;
+    border-top: 2px solid #77b748;
+    padding: 20px 0;
+}
+.logoFooter{
+    float: left;
+}
+.footInfo{
+    margin-left: 50px;
+    float: left;
+}
+.footInfo .title{
+    font-size: 16px;
+    color: #77b748;
+    font-weight: bold;
+    padding: 20px 0;
+}
+#copyright{
+    text-align: center;
+}
+
+/**---mailinfo---**/
+.mail_info{
+    margin-left: 30px;
+  float: right;
+  width: 390px;
+}
+.mail_info .tx_erae textarea{
+  width: 390px;
+  background-color: transparent;
+  resize: none;
+  text-indent: 4px;
+  border: 1px solid #77b748;
+  margin-top: 10px;
+}
+  ::placeholder {
+      color: #908484;
+      opacity: 1; /* Firefox */
+  }
+
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+     color: #908484;
+  }
+
+  ::-ms-input-placeholder { /* Microsoft Edge */
+     color: #908484;
+  }
+.mail_info .btn-send{
+  text-align: left;
+  margin-top: 10px;
+}
+.mail_info .btn-send button{
+  border: none;
+  color: #fff;
+  background: #ff812b;
+  padding: 8px 30px;
+  border-radius: 4px;
+}
+.mail_info .tx_input .info_name{
+  padding: 5px;
+  margin-right: 5px;
+  background-color: transparent;
+  border: 1px solid #77b748;
+  width: 190px;
+}
+.mail_info .tx_input .info_name:last-child{
+  margin-right: 0;
+}
+
+/*-----------------------------end footer--*/
+.dialog{
+    display: block;
+    background: #f7f7f7;
+}
+.tg-featureditm figure{
+    width: 100%;
+    float: left;
+    margin: -30px 0 -36px -40px;
+}
+.tg-featureditm figure img{
+    float: left;
+    width: auto;
+    display: block;
+    max-width: none;
+}
+.tg-featureditmcontent{
+    width: 100%;
+    float: left;
+    margin: 77px 0;
+    position: relative;
+    padding: 0 30% 0 0;
+}
+.tg-themetagbox{
+    width: 100%;
+    float: left;
+    margin: 0 0 8px;
+    min-height: 16px;
+}
+.tg-themetag{
+    float: left;
+    color: #fff;
+    padding: 0 5px;
+    font-size: 10px;
+    line-height: 16px;
+    position: relative;
+    text-transform: uppercase;
+    border-radius: 4px 0 0 4px;
+    background-color: #f16945;
+}
+.tg-booktitle{
+    width: 100%;
+    float: left;
+    padding: 0 0 20px;
+}
+.tg-featureditmcontent .tg-booktitle h3{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 43px;
+    color: #484848;
+    margin: 0 0 8px;
+    font-style: normal;
+    text-transform: capitalize;
+    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+}
+.tg-featureditmcontent .tg-booktitle h3 a{
+    color: #484848;
+}
+.tg-featureditmcontent .tg-booktitle h3 a:hover{
+    color: #77b748;
+}
+.tg-featureditmcontent .tg-bookwriter{
+    font-size: 18px;
+    line-height: 18px;
+    padding: 0 0 10px;
+}
+.tg-featureditmcontent .tg-bookwriter a{
+    color: #666
+}
+.tg-priceandbtn{
+    top: 0;
+    right: 0;
+    margin: 45px 0;
+    text-align: center;
+    position: absolute;
+}
+.tg-priceandbtn .tg-bookprice{
+    width: auto;
+    float: none;
+    display: block;
+    overflow: hidden;
+}
+.tg-featureditmcontent .tg-bookprice ins{
+    color: #484848;
+    text-decoration: none;
+    font: bold 40px/40px 'Work Sans', Arial, Helvetica, sans-serif;
+}
+.tg-featureditmcontent .tg-bookprice del {
+    font-size: 26px;
+    font-weight: 500;
+    color: #484848;
+    font-family:  'Work Sans', Arial, Helvetica, sans-serif;
+}
+.tg-btn{
+    padding:10px 0;
+    display: block;
+    background-color: #77b748;
+    border-radius: 4px;
+}
+.tg-btn:hover, .tg-btn.tg-active{
+    box-shadow: inset 0 -2px 0 0 #649b3c;
+}
+.tg-btnstyletwo i{
+    padding: 0 5px 0 0;
+}
+.tg-btnstyletwo i, .tg-btnstyletwo em {
+    font-style: normal;
+    line-height: inherit;
+}
+
+/****------------PayMent-----------****/
+#content .payment{
+    padding: 60px 10px 20px 0;
+}
+#content .payment .titleSidebar{
+    display: block;
+    margin: 20px 0;
+}
+#content .payment input{
+    margin: 10px 0;
+}
+/*-------------------------- end payment---*/
+
+
+@media only screen and (min-width: 1200px){
+    .inner{
+        width: 1075px;
+    }
+}
+@media only screen and (max-width: 1199px){
+    .inner{
+        width: 950px;
+    }
+    .header-info .h-search{
+        padding:0 0 0 300px;
+        width: 70%;
+    }
+    .footInfo{
+        width: 30%;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .inner{
+        width: 100%;
+        padding:0 4%;
+    }
+    .header-info .h-search{
+        padding:0 0 0 300px;
+        width: 80%;
+    }
+    .logoFooter{
+        width: 100%;
+    }
+    .footInfo{
+        width: 40%;
+        margin: 0;
+        padding: 20px 0;
+    }
+}
+@media only screen and (max-width: 768px){
+    .sp-btnmenu{
+        display: block!important;
+        font-size: 40px;
+        color: #fff;
+        padding: 0 25px;
+    }
+    .header-nav ul{
+        display: none;
+        font-size: 20px;
+    }
+    .header-nav ul.show{
+        display: block;
+    }
+    .header-nav ul li{
+        width: 100%;
+        border-top:1px solid #fff;
+    }
+    .footInfo{
+        width: 100%;
+        margin: 0;
+        padding: 20px 0;
+    }
+    .mail_info{
+        margin-left: 0;
+      float: left;
+      width: 100%;
+    }
+    .mail_info .tx_input .info_name{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .mail_info .tx_erae textarea{
+      width: 100%;
+      background-color: transparent;
+      resize: none;
+      text-indent: 4px;
+      border: 1px solid #77b748;
+      margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 667px){
+    .header-info .h-search{
+        padding:0 0 0 250px;
+    }
+}
+@media only screen and (max-width: 568px){
+    .header-info .inner{
+        padding-bottom: 40px;
+    }
+    .header-info .h-search{
+        padding: 10px;
+        width: 90%;
+        bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .header-info .inner{
+        padding-bottom: 40px;
+    }
+    .header-info .h-search{
+        padding: 10px;
+        width: 90%;
+        bottom: 10px;
+    }
+}
+@media only screen and (max-width: 320px){
+    
+    
+    
+}
